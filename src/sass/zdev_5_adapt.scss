@@ -1,20 +1,56 @@
-@media screen and (max-width: 1920px){
+@media screen and (max-width: 1500px){
+    /*header ---------------------------*/
+        .header-wraper{
+            .content{ padding: 0 10px;}
+            .menu{ width: 43%;
+                ul{ width: 100%;}
+            }
+            .phones{flex-direction: column; width: auto;}
+
+        }
+    /*END header ---------------------------*/
+}
+@media screen and (max-width: 1170px){
+    /*header ---------------------------*/
+    header .header-wraper .phones{ display: none;}
+    .header-wraper .menu{ width: 60%;}
+    /*END header ---------------------------*/
 
 }
-@media screen and (max-width: 1600px){
 
-}
-@media screen and (max-width: 1366px){
-
-}
-@media screen and (max-width: 1280px){
-
-}
 @media screen and (max-width: 1024px){
-
+    /*how-get ----------------------------------------------------*/
+        .how-get{
+            .content{flex-wrap: wrap; justify-content: space-around;
+                ul{ display: none;}
+            }
+        }
+    /*END how-get ----------------------------------------------------*/
 }
 @media screen and (max-width: 992px){
+    /*header ---------------------------*/
+    .header-wraper{
+        .sendwich-icon{ display: block;}
+        .menu{ display: none; background-color: rgba(0,0,0,0.5); font-size: 28px;
+            position: absolute; left: 0; top: 0; width: 100%;
+            ul{ display: block; width: 100%; padding-bottom: 20px;}
+            li{ display: block; width: 100%; text-align: center; margin-bottom: 24px;}
 
+        }
+        .phones{ width: 100%;
+            .tel{ text-align: center;}
+            .date{ text-align: center;}
+        }
+
+
+    }
+    /*END header ---------------------------*/
+    /*top-section ---------------------------*/
+    .top-section{
+        .button-row{ flex-direction: column;  align-items: center;}
+    }
+
+    /*END top-section ---------------------------*/
 }
 @media screen and (max-width: 767px){
 
@@ -23,7 +59,15 @@
 
 }
 @media screen and (max-width: 479px){
-
+    /*header ---------------------------*/
+    .header-wraper{
+        .logo{width: 245px;  font: 400 14px/1.4 'TrebuchetMC';
+            .img{ padding-top: 12px;}
+        }
+        .sendwich-icon {  right: 11px; top: 53px;}
+    }
+    /*END header ---------------------------*/
+    .button{ font-size:11px;}
 }
 @media screen and (max-width: 320px){
 
