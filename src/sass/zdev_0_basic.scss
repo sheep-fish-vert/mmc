@@ -97,7 +97,10 @@ input, textarea{
 
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
 @include font-face('PFDinDisplayPro', 'PFDinDisplayPro-Bold', 700);
+@include font-face('PFDinDisplayPro', 'pfdindisplaypro-light', 400);
 @include font-face('Sitka', 'SitkaHeading-Italic', 400, italic);
+@include font-face('Sitka', 'SitkaHeading-BoldItalic', 700, italic);
+@include font-face('Sitka', 'SitkaBanner-Bold', 700);
 @include font-face('ProximaNova', 'proximaNovaBold', 700);
 @include font-face('TrebuchetMC', 'trebuc', 400);
 
