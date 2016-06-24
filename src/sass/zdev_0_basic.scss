@@ -82,7 +82,7 @@ input, textarea{
 
 /*fonts*/
 @mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
-    $filepath: "/fonts/" + $file;
+    $filepath: "/font/" + $file;
     @font-face {
         font-family: quote($style-name);
         src: url($filepath + ".eot");
@@ -96,6 +96,10 @@ input, textarea{
 }
 
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
+@include font-face('PFDinDisplayPro', 'PFDinDisplayPro-Bold', 700);
+@include font-face('Sitka', 'SitkaHeading-Italic', 400, italic);
+@include font-face('ProximaNova', 'proximaNovaBold', 700);
+@include font-face('TrebuchetMC', 'trebuc', 400);
 
 
 /*/fonts*/
