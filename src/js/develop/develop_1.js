@@ -1,7 +1,13 @@
+function styleSelect(){
 
+    $('.form-style-select').styler();
+
+}
 
 
 $(document).ready(function(){
+
+    styleSelect();
 
 });
 
