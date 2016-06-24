@@ -4,8 +4,6 @@ function styleSelect(){
 
     $('select.register-time').change(function(){
 
-        console.log('s');
-
         $('.form-chossen-value span').text($(this).val());
 
     });
