@@ -2,6 +2,12 @@ function styleSelect(){
 
     $('.form-style-select').styler();
 
+    $('select.register-time').change(function(){
+
+        $('.form-chossen-value span').text($(this).val());
+
+    });
+
 }
 
 
