@@ -82,8 +82,12 @@ input, textarea{border-width: 0 0 1px 0;border-style:solid;border-color:#a0cedc;
         &::-moz-placeholder{color:#007ca1;}
         &:-ms-input-placeholder{color:#007ca1;}
     }
-    &.error{
-
+    &.error{border-color:#ff0000;
+        &::-webkit-input-placeholder{color:#ff0000;}
+        &:-moz-placeholder{color:#ff0000;}
+        &::-moz-placeholder{color:#ff0000;}
+        &:-ms-input-placeholder{color:#ff0000;}
+        &+label{display:none!important;}
     }
 }
 

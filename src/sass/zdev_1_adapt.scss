@@ -9,11 +9,36 @@
 }
 @media screen and (max-width: 1280px){
 
+    /* form-block */
+
+        .form-block{
+
+            h2{font-size: 18px;}
+
+        }
+
+    /* /form-block */
+
 }
 @media screen and (max-width: 1024px){
 
 }
 @media screen and (max-width: 992px){
+
+    /* form-one-block */
+
+        .form-block{padding:50px 0 50px 0;
+            &.form-one-block{
+                .form-block-wrap{display: block;
+                    .form-block-col{width: 100%;margin-bottom: 50px;
+                        &:last-child{margin-bottom: 0;}
+                        h2{text-align: center;margin-bottom: 30px;}
+                    }
+                }
+            }
+        }
+
+    /* /form-one-block */
 
 }
 @media screen and (max-width: 767px){
