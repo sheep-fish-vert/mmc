@@ -74,7 +74,7 @@
             h2{ margin: 0; color: #833c3f;font:italic 700 22px/1.2 'Sitka';letter-spacing: 2.6px;}
         }
         .content{ display: flex; justify-content: space-between; margin: 0 auto; max-width: 1074px; padding: 81px 50px 0 20px; width: 100%;
-            ul{ display: flex; justify-content: space-between; width: 100%; margin: 0; padding: 126px 0 0; margin:0 4px;}
+            ul{ display: flex; justify-content: space-between; width: 100%; padding: 126px 0 0; margin:0 4px;}
             li{ width: 12px; height: 4px; background-color: #487da5; display: inline-block;}
         }
         .item{ padding-bottom: 20px;
@@ -95,3 +95,31 @@
         }
     }
 /*END how-get ----------------------------------------------------*/
+/*icons ----------------------------------------------------------*/
+    .icons{  background-position: center; background-size:cover; overflow: hidden; background-image: url(../images/iconsBG.png); min-height: 1099px;
+        .icons-wrap{max-width: 975px; padding: 0 20px 122px;margin: 0 auto;}
+        .title{ width: 100%; text-align: center; padding: 95px 0 138px;
+            h2{ margin: 0; color: #fff;font:italic 700 22px/1.2 'Sitka'; letter-spacing: 2.6px;}
+        }
+        .content{ display: flex;justify-content: space-around; flex-wrap: wrap; }
+        .item{ margin-bottom: 75px;
+            .img{height: 130px;border-bottom: 4px solid #c5797c; position: relative; width: 235px;
+                img{ position: absolute; bottom: 28px; left: 0;}
+            }
+            .txt{ font: 700 18px/1 'PFDinDisplayPro'; color: #fff; padding-top: 19px;max-width: 203px;  letter-spacing: 0.5px; white-space: nowrap;
+                p{ margin: 0;}
+            }
+        }
+    }
+/*END icons ----------------------------------------------------------*/
+/*map-section ----------------------------------------------------------*/
+    .map-section{
+        .map-section-wrap{ position: relative; width: 100%;
+            #map{ width: 869px; height: 619px;}
+            .txt{ position: absolute; height: 100%; right: 0; top: 0;}
+            .title{ width: 100%; text-align: center; padding: 95px 0 138px;
+                h2{ margin: 0; color: #7e3336;font:italic 700 22px/1.2 'Sitka'; letter-spacing: 2.6px;}
+            }
+        }
+    }
+/* END map-section ----------------------------------------------------------*/

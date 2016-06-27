@@ -11,8 +11,46 @@ function butter(){
 
 
 
+function googleMap(mapWrap){
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(cordX,cordY);
+        var myOptions = {
+            zoom: 16,
+            center: myLatlng,
+            disableDefaultUI: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+
+        };
+        var map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
+
+
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            animation: google.maps.Animation.DROP
+
+        });
+
+
+        marker.addListener('click', toggleBounce);
+        function toggleBounce() {
+            if (marker.getAnimation() !== null) {
+                marker.setAnimation(null);
+            } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
+        }
+
+
+
+    }
+    initialize();
+}
+
 $(document).ready(function(){
     butter();
+    googleMap('map');
 });
 
 $(window).load(function(){
