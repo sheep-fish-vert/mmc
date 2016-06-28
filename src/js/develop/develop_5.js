@@ -8,7 +8,18 @@ function butter(){
         }
     });
 }
+function inputCheck() {
+    $('.contact-form').on('keyup', 'input', function () {
 
+        if($(this).attr('aria-invalid') == 'false'){
+            console.log($(this).attr('aria-invalid'));
+            $(this).parent().addClass('show');
+        }else{
+            console.log($(this).attr('aria-invalid'));
+            $(this).parent().removeClass('show');
+        }
+    });
+}
 
 
 function googleMap(mapWrap){
@@ -56,6 +67,7 @@ function googleMap(mapWrap){
 $(document).ready(function(){
     butter();
     googleMap('map');
+    inputCheck();
 });
 
 $(window).load(function(){

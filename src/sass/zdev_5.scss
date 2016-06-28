@@ -127,3 +127,44 @@
         }
     }
 /* END map-section ----------------------------------------------------------*/
+/* popup ----------------------------------------------------------*/
+    #call-popup{ position: relative; width: 100%;  background-position: center; background-size:cover; overflow: hidden; background-image: url(../images/popBG.png); padding: 0 72px 40px 76px;
+        .title{ width: 100%;padding: 53px 0 100px;
+            h5{ margin: 0; color: #fff;font:italic 700 22px/1.2 'Sitka'; letter-spacing: 2.6px;}
+        }
+        .form_row{ width: 100%;        }
+        .form_input{ width: 100%; margin-bottom: 56px; position: relative;
+            &.show {
+                &:after { content: ''; width: 20px; height: 10px; background-color: transparent; border-left: 1px solid #fff; border-bottom: 1px solid #fff; position: absolute; transform: rotate(-45deg); right: 0; top: 7px; display: block; }
+            }
+
+
+        }
+        .subtitle{ width: 100%; text-align: left;font: 700 18px/1 'SitkaBanner'; color: #fff; padding-bottom: 12px;}
+        input { width: 100%; border-bottom: 2px solid rgba(255, 255, 255, 0.4);color: rgba(255, 255, 255, 0.4);
+                  &::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.4);}
+                            &:-moz-placeholder {color: rgba(255, 255, 255, 0.4);}
+                           &::-moz-placeholder {color: rgba(255, 255, 255, 0.4);}
+                       &:-ms-input-placeholder {color: rgba(255, 255, 255, 0.4);}
+            &:focus{color: rgba(255, 255, 255, 1); border-color: rgba(255, 255, 255, 1);
+                &::-webkit-input-placeholder {color: rgba(255, 255, 255, 1);}
+                &:-moz-placeholder {color: rgba(255, 255, 255, 1);}
+                &::-moz-placeholder {color: rgba(255, 255, 255, 1);}
+                &:-ms-input-placeholder {color: rgba(255, 255, 255, 1);}
+            }
+            &.error{                          color: rgba(255, 0, 0, 1);
+                &::-webkit-input-placeholder {color: rgba(255, 0, 0, 1);}
+                          &:-moz-placeholder {color: rgba(255, 0, 0, 1);}
+                         &::-moz-placeholder {color: rgba(255, 0, 0, 1);}
+                     &:-ms-input-placeholder {color: rgba(255, 0, 0, 1);}
+            }
+
+        }
+        .button{ height: 53px; line-height: 53px; background-image: url(../images/button-popup.png); color: #3d6a8c; border: none; margin-top: 90px;
+            &:hover{background-image: url(../images/button-blue.png); color: #fff;}
+        }
+    }
+    .fancybox-close{ display: none;}
+#call-success { position: relative; width: 100%; background-position: center; background-size: cover; overflow: hidden; background-image: url(../images/popBG.png); padding: 20px; color: #fff;font:italic 700 22px/1.2 'Sitka'; letter-spacing: 2.6px;
+}
+/* popup ----------------------------------------------------------*/

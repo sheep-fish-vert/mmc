@@ -11,32 +11,33 @@
 
     <div id="call-popup">
         <form action="ajax.php" name="" class="contact-form">
-            <div class="contact-form-title">
-                <h5>Lorem ipsum dolor.</h5>
+            <div class="title">
+                <h5>Бесплатная доставка до
+                    любой станции метро</h5>
             </div>
-            <div class="contact-form-row cfix">
-                <div class="contact-form-item">
-                    <div class="contact-form-item-input form_row">
-                        <div class="form_input">
-                            <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя">
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-item">
-                    <div class="contact-form-item-input form_row">
-                        <div class="form_input">
-                            <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
-                        </div>
-                    </div>
+            <div class="form_row">
+                <div class="subtitle">Фамилия Имя Отчество</div>
+                <div class="form_input">
+                    <input type="text" name="contact_name" required="required" value="" placeholder="Фамилия Имя Отчество">
                 </div>
             </div>
-            <div class="contact-form-row cfix">
-                <div class="contact-form-item">
-                    <button type="submit" class="contact-submit">
-                        <span>Отправить заявку</span>
-                    </button>
+            <div class="form_row">
+                <div class="subtitle">E-mail</div>
+                <div class="form_input">
+                    <input type="email" name="contact_mail" required="required" value="" placeholder="E-mail">
                 </div>
             </div>
+            <div class="form_row">
+                <div class="subtitle">Номер телефона для связи</div>
+                <div class="form_input">
+                    <input type="tel" name="contact_tel" value="" required="required" placeholder="Номер телефона для связи" class="tel-mask">
+                </div>
+            </div>
+
+            <button type="submit" class="button">
+                <span>ЗАКАЗАТЬ</span>
+            </button>
+
         </form>
     </div>
 

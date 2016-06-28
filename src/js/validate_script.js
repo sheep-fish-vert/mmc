@@ -112,7 +112,6 @@ function validationCall(form){
             else {
                thisForm.trigger('reset');
             }
-
         }
     });
 }
@@ -171,9 +170,13 @@ function popNext(popupId, popupWrap){
 
     $.fancybox.open(popupId,{
         padding:0,
-        fitToView:false,
         wrapCSS:popupWrap,
         autoSize:true,
+        openEffect  : 'fade',
+        closeEffect : 'fade',
+        autoResize:true,
+        'closeBtn' : true,
+        fitToView:true,
         afterClose: function(){
             $('form').trigger("reset");
             clearTimeout(timer);
@@ -209,7 +212,11 @@ function fancyboxForm(){
     wrapCSS:'fancybox-form',
     'closeBtn' : true,
     fitToView:true,
-    padding:'0'
+    padding:'0',
+      maxWidth:541,
+      width:'90%'
+
+
   })
 }
 
@@ -268,7 +275,7 @@ function someAjax(item, someUrl, successFunc, someData){
 
 $(document).ready(function(){
 
-   validate('#call-popup .contact-form', {submitFunction:validationCall});
+   validate('.contact-form', {submitFunction:validationCall});
 
    validate('.form-block-main-one', {submitFunction:validationCall});
    validate('.form-block-main-two', {submitFunction:validationCall});
