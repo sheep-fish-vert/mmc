@@ -54,6 +54,16 @@
 }
 @media screen and (max-width: 767px){
 
+    /*map-section ----------------------------------------------------------*/
+        .map-section{
+            .map-section-wrap{ justify-content: space-around; flex-wrap: wrap;
+                #map{ width: 100%; height: 400px;}
+                .txt{   max-width:none; margin-left: 0; }
+                .title{ width: 100%; padding: 70px 0;}
+                .row{ letter-spacing:0;}
+            }
+        }
+    /* END map-section ----------------------------------------------------------*/
 }
 @media screen and (max-width: 666px){
 

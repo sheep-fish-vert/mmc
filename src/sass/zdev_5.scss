@@ -97,7 +97,7 @@
 /*END how-get ----------------------------------------------------*/
 /*icons ----------------------------------------------------------*/
     .icons{  background-position: center; background-size:cover; overflow: hidden; background-image: url(../images/iconsBG.png); min-height: 1099px;
-        .icons-wrap{max-width: 975px; padding: 0 20px 122px;margin: 0 auto;}
+        .icons-wrap{max-width: 975px; padding: 0 20px 114px;margin: 0 auto;}
         .title{ width: 100%; text-align: center; padding: 95px 0 138px;
             h2{ margin: 0; color: #fff;font:italic 700 22px/1.2 'Sitka'; letter-spacing: 2.6px;}
         }
@@ -113,12 +113,16 @@
     }
 /*END icons ----------------------------------------------------------*/
 /*map-section ----------------------------------------------------------*/
-    .map-section{
-        .map-section-wrap{ position: relative; width: 100%;
+    .map-section{padding: 61px 20px 67px; background-position: center; background-size:cover; overflow: hidden; background-image: url(../images/mapBG.png);
+        .map-section-wrap{ position: relative; width: 100%; display: flex;justify-content: center;
             #map{ width: 869px; height: 619px;}
-            .txt{ position: absolute; height: 100%; right: 0; top: 0;}
-            .title{ width: 100%; text-align: center; padding: 95px 0 138px;
+            .txt{  height: 100%; max-width: 365px; width: 100%; margin-left: 40px;}
+            .title{ width: 100%; padding: 3px 0 209px;
                 h2{ margin: 0; color: #7e3336;font:italic 700 22px/1.2 'Sitka'; letter-spacing: 2.6px;}
+            }
+            .content{ width: 100%;}
+            .row{font: 400 16px/1 'PFDinDisplayPro'; color: #1b669e; border-bottom: 1px solid #1b669e; width: 100%; text-align: right; position: relative; min-width: 270px; padding-bottom: 3px; letter-spacing: 0.6px; margin-bottom: 44px;
+                &:before{font: 700 18px/1 'SitkaBanner'; color: #1b669e; content: attr(data-name); display: block; position: absolute; left: 0; bottom: 3px;letter-spacing: 0.6px;}
             }
         }
     }
