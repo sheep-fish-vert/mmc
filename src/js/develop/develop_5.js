@@ -18,6 +18,11 @@ function googleMap(mapWrap){
             zoom: 16,
             center: myLatlng,
             disableDefaultUI: true,
+            scrollwheel: false,
+            navigationControl: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            draggable: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
 
         };
