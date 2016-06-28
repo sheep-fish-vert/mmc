@@ -74,7 +74,6 @@
 
                 h2{text-align: center;margin-bottom: 40px;}
 
-
                 .form-two-block-row{display: flex;justify-content: space-between;align-items: flex-start;}
 
                 .form-two-block-top{margin-bottom: 37px;
@@ -96,6 +95,9 @@
                 }
 
                 .form-two-block-bottom{
+                    .form-two-block-row{align-items: flex-end;
+                        &:last-child{align-items: flex-start;}
+                    }
                     .form-two-block-col{width: calc(33.33% - 104px / 3);}
                 }
 

@@ -65,6 +65,8 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 .mbox{max-width:1305px;width:100%;padding:0 10px;margin:0 auto;position:relative;z-index:1;}
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
+.global-wrapper{overflow: hidden;}
+
 /* /wraps styling*/
 
 
@@ -89,13 +91,10 @@ input, textarea{border-width: 0 0 1px 0;border-style:solid;border-color:#a0cedc;
         &:-ms-input-placeholder{color:#ff0000;}
         &+label{display:none!important;}
     }
-    &:valid{
-
-    }
 }
 
-input{
-    &:valid{background-image:url(../images/valid-check.png);background-repeat: no-repeat;background-position: calc(100% - 8px) calc(50% - 2px);}
+input{height:37px;line-height: 37px;
+    &:valid{border-color:#007ca1;background-image:url(../images/valid-check.png);background-repeat: no-repeat;background-position: calc(100% - 8px) calc(50% - 2px);}
 }
 
 /*End Layout*/
