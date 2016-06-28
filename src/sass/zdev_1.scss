@@ -9,8 +9,8 @@
         .form_row-title{font-family: 'Sitka', sans-serif; color:#0066a1;font-weight: 700;font-size: 18px;margin-bottom:15px;}
 
         .form-style-select{width: 100%;
-            .jq-selectbox__select{background:none;border-radius: 0;border-color:#a0cdd9;height: 42px;line-height: 41px;padding:0 45px 0 15px;font-family: 'PFDinDisplayPro', sans-serif;font-weight: 400;color:#005c8c;font-size: 16px;}
-            .jq-selectbox__trigger{width: 40px;height: 40px;background-color: #097ea8;
+            .jq-selectbox__select{background:none;border-radius: 0;border-color:#a0cdd9;height: 38px;line-height: 37px;padding:0 45px 0 15px;font-family: 'PFDinDisplayPro', sans-serif;font-weight: 400;color:#005c8c;font-size: 16px;}
+            .jq-selectbox__trigger{width: 40px;height: 37px;background-color: #097ea8;
                 .jq-selectbox__trigger-arrow{border-width: 0!important;background-image: url(../images/select-arrow.png);width: 17px;height: 11px;transform-origin:50% 50%;transition:all 300ms ease;}
             }
             &.opened{
@@ -62,6 +62,37 @@
             }
 
         /* /form-one-block */
+
+        /* form-tow-block */
+
+            &.form-two-block{
+
+                h2{text-align: center;margin-bottom: 40px;}
+
+
+                .form-two-block-row{display: flex;justify-content: space-between;align-items: flex-start;}
+
+                .form-two-block-top{margin-bottom: 37px;
+                    .form-two-block-row{align-items: flex-end;
+                        .form-two-block-col, .form-descript{width: 50%;display: flex;justify-content: space-between;align-items: flex-start;}
+                        .form-two-block-col{margin-right: 18px;
+                           .form_row{width: 50%;margin-bottom: 0;
+                                &:first-child{width: 390px;}
+                                &:last-child{width: calc(100% - 440px);}
+                           }
+                        }
+                        .form-descript{align-items: center;margin-left:18px;
+                            .form-descript-item{width: 50%;
+                                .form-descript-icon{width: calc(100% - 200px);}
+                                .form-descript-text{width: 180px;}
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        /* /form-two-block */
 
     }
 

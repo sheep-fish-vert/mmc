@@ -195,6 +195,9 @@ function Maskedinput(){
     if($('.tel-mask')){
         $('.tel-mask').mask('+9 (999) 999-99-99 ');
     }
+    if($('.date-mask')){
+        $('.date-mask').mask('99.99.9999');
+    }
 }
 
 /*fansybox на форме*/
@@ -266,6 +269,10 @@ function someAjax(item, someUrl, successFunc, someData){
 $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
+
+   validate('.form-block-main-one', {submitFunction:validationCall});
+   validate('.form-block-main-two', {submitFunction:validationCall});
+
    Maskedinput();
    fancyboxForm();
 
