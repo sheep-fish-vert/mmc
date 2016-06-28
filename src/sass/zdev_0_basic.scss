@@ -89,6 +89,13 @@ input, textarea{border-width: 0 0 1px 0;border-style:solid;border-color:#a0cedc;
         &:-ms-input-placeholder{color:#ff0000;}
         &+label{display:none!important;}
     }
+    &:valid{
+
+    }
+}
+
+input{
+    &:valid{background-image:url(../images/valid-check.png);background-repeat: no-repeat;background-position: calc(100% - 8px) calc(50% - 2px);}
 }
 
 /*End Layout*/

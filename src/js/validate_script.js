@@ -20,9 +20,11 @@ function validate(form, options){
             focusCleanup : true,
             focusInvalid : false,
             invalidHandler: function(event, validator) {
+
                 setTimeout(function() {
-                      $('select[required]').trigger('refresh');
-                    }, 1)
+                    $('select[required]').trigger('refresh');
+                }, 1);
+
                 if(typeof(setings.errorFunction) === 'function'){
                     setings.errorFunction(form);
                 }
