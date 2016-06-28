@@ -20,6 +20,11 @@ function validate(form, options){
             focusCleanup : true,
             focusInvalid : false,
             invalidHandler: function(event, validator) {
+
+                setTimeout(function() {
+                    $('select[required]').trigger('refresh');
+                }, 1);
+
                 if(typeof(setings.errorFunction) === 'function'){
                     setings.errorFunction(form);
                 }
@@ -67,6 +72,15 @@ function validate(form, options){
                 messages: {
                     email: "Невалидный email"
                  }
+            });
+        }
+
+        if($('select[required]',$form).length){
+            $('select[required]',$form).rules('add',
+            {
+                messages:{
+                    required:"Виберите вариант."
+                }
             });
         }
 

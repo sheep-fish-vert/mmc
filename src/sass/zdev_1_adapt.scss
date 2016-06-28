@@ -15,6 +15,24 @@
 
             h2{font-size: 18px;}
 
+
+        /* form-two-block */
+
+            &.form-two-block{
+
+                .form-two-block-top{
+                    .form-two-block-row{display: block;
+                        .form-two-block-col{max-width: 768px;width: 100%;margin-right:auto;margin: 0 auto 20px auto;}
+                        .form-descript{max-width: 768px;width: 100%;margin-left:auto;margin:0 auto 20px auto;
+                            .form-descript-item{width: 300px;}
+                        }
+                    }
+                }
+
+            }
+
+        /* /form-two-block */
+
         }
 
     /* /form-block */
@@ -25,20 +43,55 @@
 }
 @media screen and (max-width: 992px){
 
-    /* form-one-block */
+    /*form-block */
 
         .form-block{padding:50px 0 50px 0;
-            &.form-one-block{
-                .form-block-wrap{display: block;
-                    .form-block-col{width: 100%;margin-bottom: 50px;
-                        &:last-child{margin-bottom: 0;}
-                        h2{text-align: center;margin-bottom: 30px;}
+
+            /* form-one-block */
+
+                &.form-one-block{
+                    .form-block-wrap{display: block;
+                        .form-block-col{width: 100%;margin-bottom: 50px;
+                            &:last-child{margin-bottom: 0;}
+                            h2{text-align: center;margin-bottom: 30px;}
+                        }
                     }
                 }
-            }
+
+            /* /form-one-block */
+
+            /* form-two-block */
+
+                &.form-two-block{
+
+                    .form-two-block-top{
+                        .form-two-block-row{
+                            .form-two-block-col{display: block;
+                                .form_row{margin-bottom: 20px;
+                                    &:first-child, &:last-child{width: 100%;}
+                                }
+                            }
+                        }
+                    }
+
+                    .form-two-block-bottom{
+                        .form-two-block-row{display: block;max-width: 768px;width: 100%;margin: 0 auto;}
+                        .form-two-block-col{width: 100%;}
+                    }
+
+                    .form_submit-wrap{text-align: center;}
+                    .form_submit-descript{display: block;
+                        .form_submit-icon{margin:0 auto 20px auto;}
+                        .form_submit-text{width: 100%;text-align: center;}
+                    }
+
+                }
+
+            /* /form-two-block */
+
         }
 
-    /* /form-one-block */
+    /* /form-block */
 
 }
 @media screen and (max-width: 767px){
