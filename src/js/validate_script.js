@@ -195,6 +195,9 @@ function Maskedinput(){
     if($('.tel-mask')){
         $('.tel-mask').mask('+9 (999) 999-99-99 ');
     }
+    if($('.date-mask')){
+        $('.date-mask').mask('99.99.9999');
+    }
 }
 
 /*fansybox на форме*/
