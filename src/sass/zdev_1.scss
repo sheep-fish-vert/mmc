@@ -24,6 +24,11 @@
                     &:hover{color:#fff;}
                 }
             }
+            &+.errorText{display: none!important;}
+            &.error{
+                .jq-selectbox__select{color:#ff0000;border-color:#ff0000;}
+                .jq-selectbox__trigger{background-color: #ff0000;}
+            }
         }
 
         .form-chossen-value{border:1px solid #a0ccd9;text-align: center;padding:10px 10px;font-family: 'PFDinDisplayPro', sans-serif;font-weight: 400;color:#005c8c;font-size: 16px;
@@ -88,6 +93,10 @@
                             }
                         }
                     }
+                }
+
+                .form-two-block-bottom{
+                    .form-two-block-col{width: calc(33.33% - 104px / 3);}
                 }
 
             }
