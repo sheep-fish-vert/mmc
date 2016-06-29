@@ -22,9 +22,9 @@
     require 'class.phpmailer.php';
 
     $mail = new PHPMailer();
-    $mail->AddAddress('mail@mail.ru','');   // кому - адрес, Имя
+    $mail->AddAddress('regcentrmoscow24@yandex.ru','');   // кому - адрес, Имя
     $mail->IsHTML(true);                        // выставляем формат письма HTML
-    $mail->Subject = $subject; // тема письма
+    $mail->Subject = $subject; // тема письма 
     $mail->CharSet = "UTF-8";                   // кодировка
     $mail->Body = $mess;
     if(isset($_FILES['file'])) {

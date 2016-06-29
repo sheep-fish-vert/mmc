@@ -8,7 +8,7 @@
             }
         }
         .menu{ font:700 16px/1.2 'ProximaNova';
-            ul{list-style-type: none; display: flex; justify-content: space-between; width: 642px; padding-top: 41px; letter-spacing: 1px; padding-left: 0; margin: 0;}
+            ul{list-style-type: none; display: flex; justify-content: space-between; width: 642px; padding-top: 45px; letter-spacing: 1px; padding-left: 0; margin: 0;}
             li{ display: inline-block;}
             a{ color: #fff; text-decoration: none; text-transform: uppercase; cursor: pointer;}
         }
@@ -44,8 +44,8 @@
         .title{ text-align: center;padding-bottom: 37px;
             h2{ margin: 0; font:italic 400 30px/1.2 'Sitka';letter-spacing: 1.8px;}
         }
-        .txt{ text-align: center;padding-bottom: 37px;
-            p{ margin: 0;font:italic 400 18px/1.35 'Sitka'; letter-spacing: 1.1px;}
+        .txt{ text-align: center;padding-bottom: 37px; font:italic 400 18px/1.35 'Sitka'; letter-spacing: 1.1px;
+            p{ margin: 0;}
         }
         .button-row{ display: flex; justify-content:space-between; margin: 0 auto; max-width: 980px; padding-top: 90px;      }
     }
@@ -165,6 +165,6 @@
         }
     }
     .fancybox-close{ display: none;}
-#call-success { position: relative; width: 100%; background-position: center; background-size: cover; overflow: hidden; background-image: url(../images/popBG.png); padding: 20px; color: #fff;font:italic 700 22px/1.2 'Sitka'; letter-spacing: 2.6px;
+#call_success { position: relative; width: 100%; background-position: center; background-size: cover; overflow: hidden; background-image: url(../images/popBG.png); padding: 20px; color: #fff;font:italic 700 22px/1.2 'Sitka'; letter-spacing: 2.6px; text-align: center;
 }
 /* popup ----------------------------------------------------------*/
